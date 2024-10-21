@@ -1,6 +1,8 @@
 import sys
 import random
 from util import header, mainmeunu, clear_screen
+from pvp import mainpvp
+from pvc import mainpvc
 
 def main():
     option = 0
@@ -12,10 +14,10 @@ def main():
 
         if option == 1:
             clear_screen()
-            print('1. Player vs Player')
+            mainpvp()
         elif option == 2:
             clear_screen()
-            print('2. Player vs Machine')
+            mainpvc()
         elif option != 3:
             clear_screen()
             print('Invalid option')
