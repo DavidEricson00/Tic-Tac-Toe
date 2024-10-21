@@ -1,5 +1,3 @@
-import sys
-import random
 from util import header, mainmeunu, clear_screen
 from pvp import mainpvp
 from pvc import mainpvc
