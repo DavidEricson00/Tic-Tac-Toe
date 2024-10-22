@@ -5,18 +5,18 @@ from player import Player
 from game import game
 
 def mainpvp():
-    # Names
     valid = None
-    while not valid:
+
+    while not valid: # Player name check
         try:
             p1_name = input("Enter the name of the player 01: ")
             p2_name = input("Enter the name of the player 02: ")
             valid = True
-        except (ValueError, KeyboardInterrupt):
+        except (ValueError, KeyboardInterrupt): # Handle non-integer and keyboard inputs
             clear_screen()
             print("Invalid name, please try again.")
     
-    # Player Class
+    # Define Player Class
     player1 = Player(p1_name)
     player2 = Player(p2_name)
     

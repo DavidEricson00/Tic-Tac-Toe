@@ -14,7 +14,7 @@ class Player:
                 if self.symbol not in ['X', 'O']:
                     print("Invalid symbol. Please choose either X or O.")
             
-            except (ValueError, KeyboardInterrupt):
+            except (ValueError, KeyboardInterrupt): # Handle non-integer and keyboard inputs
                 print("\nInvalid symbol. Please choose either X or O.")
 
     def set_turn(self, is_turn):

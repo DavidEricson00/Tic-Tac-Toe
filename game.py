@@ -56,8 +56,8 @@ def game(player1, player2):
                 player1.is_turn = not player1.is_turn
                 player2.is_turn = not player2.is_turn
 
-        except (ValueError, KeyboardInterrupt): # Handle non-integer inputs
-            print("Invalid input, please enter a number.")
+        except (ValueError, KeyboardInterrupt): # Handle non-integer and keyboard inputs
+            print("\nInvalid input, please enter a number.")
 
     if not winner: # Draw
         print_table(table)

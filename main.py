@@ -7,12 +7,13 @@ from pvc import mainpvc
 def main():
     option = 0
 
-    while option != 3:
+    while option != 3: # Main Menu
+        # Print menu elements
         header()
         mainmeunu()
         
         try:
-            option = int(input('Enter the desired option: '))
+            option = int(input('Enter the desired option: ')) # Menu option input
             if option == 1:
                 clear_screen()
                 mainpvp()
@@ -23,11 +24,11 @@ def main():
                 clear_screen()
                 print('Invalid option')
 
-        except (ValueError, KeyboardInterrupt):
+        except (ValueError, KeyboardInterrupt): # Handle non-integer and keyboard inputs
             clear_screen()
             print("Invalid input, please enter a number.")
     
-    print('Thanks for playing, goodbye.')
+    print('Thanks for playing, goodbye.') # Exit mensage
 
 if __name__ == "__main__":
     main()
