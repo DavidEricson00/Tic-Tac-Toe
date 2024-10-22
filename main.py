@@ -10,9 +10,9 @@ def main():
     while option != 3:
         header()
         mainmeunu()
-        option = int(input('Enter the desired option: '))
-
+        
         try:
+            option = int(input('Enter the desired option: '))
             if option == 1:
                 clear_screen()
                 mainpvp()
@@ -22,8 +22,9 @@ def main():
             elif option != 3:
                 clear_screen()
                 print('Invalid option')
-                
-        except ValueError:
+
+        except (ValueError, KeyboardInterrupt):
+            clear_screen()
             print("Invalid input, please enter a number.")
     
     print('Thanks for playing, goodbye.')

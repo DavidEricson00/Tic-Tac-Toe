@@ -28,15 +28,22 @@ def heads_or_tails(p):
     print("To start the game let's decide who's the first to play by heads and tails")
 
     while choice not in options:
-        choice = input(f"{p} do you choose heads or tails: ").lower()
-        if choice not in ['heads', 'tails']:
+        try:
+            choice = input(f"{p} do you choose heads or tails: ").lower()
+
+            if choice not in ['heads', 'tails']:
+                clear_screen()
+                print('Invalid option, please try again')
+
+        except (ValueError, KeyboardInterrupt):
             clear_screen()
-            print('Invalid option, please try again')
+            print("Invalid, please try again.")
 
     result = random.choice(options)
 
     if result == choice:
         print(f'The result was {result}, {p} won')
         return True
+    
     print(f'The result was {result}, {p} lost')
     return False
