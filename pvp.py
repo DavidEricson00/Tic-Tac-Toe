@@ -17,8 +17,8 @@ def mainpvp():
             print("Invalid name, please try again.")
     
     # Define Player Class
-    player1 = Player(p1_name)
-    player2 = Player(p2_name)
+    player1 = Player(p1_name,'player')
+    player2 = Player(p2_name,'player')
     
     clear_screen()
     

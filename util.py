@@ -19,7 +19,7 @@ def mainmeunu(): # Main menu
 def machinedifmenu(): # PVC Menu
     print('1. Normal')
     print('2. Impossible')
-    print('3. return')
+    print('3. Return')
 
 def heads_or_tails(p): # Heads or Tails mechanic
     choice = ''
