@@ -1,36 +1,50 @@
-<h1 align="center">
-💧⚪ Elemental Battle 🔥🌱
-</h1>
-
-<div align="center">
-<img src="https://imgur.com/a/Oq9Y8vq.png">
-</div>
-
-<h2>💫 About the Game</h2>
-<p>Elemental Battle is a virtual creature battle simulator developed in Java. The project was created with the goal of deepening my understanding of the Java language and object-oriented programming (OOP).</p>
+<h1 align="center">🎮 Tic-Tac-Toe Game</h1>
 
 <h2>📌 Objectives</h2>
-<p>Improve my Java skills and learn object-oriented programming concepts.</p>
+<p>
+This project is a command-line based Tic-Tac-Toe game implemented in Python. It aims to apply concepts such as object-oriented programming, user interaction, and handling errors through try/except blocks.
+</p>
 
-<h2>🕹️ Key Features</h2>
+<h2>💡 Key Features</h2>
 <ul>
-<li><strong>Element Battle:</strong> An arena where two elements fight to see who comes out victorious.</li>
-<li><strong>Turn-Based Combat:</strong> Turn-based combat mechanics where each element can attack to cause damage or defend to block attacks.</li>    
-<li><strong>Element Types:</strong> The game features various species of elements, each with unique types and sprites.</li>
-<li><strong>Weakness System:</strong> Each element has a type with specific weaknesses against others.</li>
+<li>Player vs Player Mode: Two users compete to see who gets three in a row.</li>
+<li>Player vs Computer Mode: Play against the computer.</li>
+<li>Turn Management: The game alternates between players each turn.</li>
+<li>Heads or Tails Mechanic: Decides which player goes first.</li>
+<li>Win and Draw Detection: Displays a winner or announces a draw when applicable.</li>
 </ul>
 
 <h2>🎲 Game Modes</h2>
 <ul>
-<li><strong>Create Your Own Element:</strong> You can create your own element and assign custom attributes to it.</li>
-<li><strong>Play with Predefined Elements:</strong> Play with elements that come with predefined attributes.</li>
+<li><strong>Player vs Player (PVP):</strong> Both players input their moves, competing to win.</li>
+<li><strong>Player vs Computer (PVC):</strong> Play against aagainst the computer.</li>
 </ul>
 
 <h2>📂 File Structure</h2>
 <pre>
-└── Elemental-Battle/
-    ├── MainMenu.java: Entry point of the game.
-    ├── Element.java: Defines the Element class and manages element actions.
-    ├── Battle.java: Contains the loop and logic for managing the battle.
-    └── Display.java: Manages the elements and attack visuals.
+└── Tic-Tac-Toe/
+    ├── main.py: Entry point of the game.
+    ├── player.py: Defines the Player class and manages player actions.
+    ├── game.py: Contains the game loop and logic for managing the board.
+    ├── pvp.py: Handles the Player vs Player game mode.
+    ├── pvc.py: Manages the Player vs Computer mode.
+    └── util.py: Helper functions for screen management, menus, and mechanics.
 </pre>
+
+<h2>📚 Libraries Used</h2>
+<ul>
+<li><strong>Random:</strong> For generating random moves for the computer.</li>
+<li><strong>OS:</strong> For clearing the console screen during gameplay.</li>
+</ul>
+
+<h2>📥 Getting Started</h2>
+<p>
+To start playing the Tic-Tac-Toe, follow these steps
+<li>Clone the repository:</li>
+<pre><code>git clone https://github.com/DavidEricson00/Tic-Tac-Toe.git</code></pre>
+<li>Navigate to the project directory:</li>
+<pre><code>cd Tic-Tac-Toe</code></pre>
+<li>Run the main script:</li>
+<pre><code>python main.py</code></pre>
+</ol>
+</p>
